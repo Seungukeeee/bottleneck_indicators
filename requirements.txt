@@ -1,0 +1,33 @@
+# ── Bottleneck Indicators — Python Dependencies ───────────────────────────────
+# Python 3.10+ recommended.
+#
+# Install all at once:
+#   pip install -r requirements.txt
+#
+# For Ollama (local LLM inference), install the desktop app separately:
+#   https://ollama.com  →  then run: ollama pull llama3.1
+
+# ── Data & Finance ─────────────────────────────────────────────────────────────
+yfinance>=0.2.40          # Stock price & financial statement data
+pandas>=2.0.0             # DataFrame operations
+numpy>=1.26.0             # Numerical computing
+
+# ── Web Scraping ───────────────────────────────────────────────────────────────
+requests>=2.31.0          # HTTP client for SEC EDGAR
+beautifulsoup4>=4.12.0    # HTML parser for 10-K document extraction
+lxml>=5.0.0               # Fast HTML/XML parser backend for BeautifulSoup
+
+# ── Graph Analysis ─────────────────────────────────────────────────────────────
+networkx>=3.2.0           # Supply chain network graph construction & centrality
+
+# ── Visualization ──────────────────────────────────────────────────────────────
+matplotlib>=3.8.0         # Network graphs & portfolio return charts
+
+# ── LLM — Local (Part 2 & 3) ──────────────────────────────────────────────────
+ollama>=0.2.0             # Ollama Python client (Llama 3.1, runs locally)
+
+# ── LLM — Cloud (Part 2 only, optional) ───────────────────────────────────────
+# groq>=0.9.0             # Groq API client — uncomment if running Part 2 Groq cells
+
+# ── Environment ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0      # Loads .env file into os.environ
